@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html land="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gaming Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Gaming Survey</h1>
+    <p id="description">Please take some time to tell us about how you game</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name-label">Enter your name<input id="name" name="name" type="text" placeholder="Name" required /><label>
+        <label id="email-label" for="email-label">Enter your email<input id="email" name="email" type="email" placeholder="Email" required /><label>
+        <label id="number-label" for="number-label">Enter your age<input id="number" name="age" type="number" placeholder="Age" min="13" max="120" optional /><label>
+      </fieldset>
+      <fieldset>
+       <legend>Do you play games? (Required)</legend>
+        <label for="yes"><input id="yes" name="do-you-play-games?" type="radio" class="inline" value="yes" checked/> Yes</label>
+        <label for="no"><input id="no" name="do-you-play-games?" type="radio" class="inline" value="no"/> No</label>
+      </fieldset>
+     <p>What devices do you use to game?</p>
+      <fieldset>
+        <legend>Console Type (Select all that apply)</legend>
+        <label for="Nintendo"><input id="Nintendo" name="console-type" type="checkbox" class="inline2" value="Nintendo" />Nintendo<label>
+        <label for="Xbox"><input id="Xbox" name="console-type" type="checkbox" class="inline2" value="Xbox" />Xbox<label>
+        <label for="PlayStation"><input id="PlayStation" name="console-type" type="checkbox" class="inline2" value="PlayStation" />PlayStation<label>
+        <label for="PC"><input id="PC" name="console-type" type="checkbox" class="inline2" value="PC" />PC<label>
+        <label for="Phone"><input id="Phone" name="console-type" type="checkbox" class="inline2" value="Phone" />Phone<label>
+        <label for="Other">Other<textarea id="Other" name="console-type"  placeholder="Please specify"></textarea><label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How many hours a week do you play on average?
+          <select id="dropdown" name="dropdown">
+           <option value="">Select One</option>
+           <option value="1">Less than 6 hours</option>
+           <option value="2">6-18 hours</option>
+           <option value="3">18-28 hours</option>
+           <option value="4">More than 28 hours</option>
+          </select>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
